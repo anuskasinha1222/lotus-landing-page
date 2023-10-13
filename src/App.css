@@ -1,5 +1,96 @@
-/* home page */
-/* hero section */
-.first-conatiner{
-  display:flex;
+/* NavBr */
+.site-logo {
+ width:129px;
+ height:29px;
+}
+.Navbar-menu {
+  background-color: #1e7f68;
+}
+.menu {
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
+}
+.menu-icon {
+  color: yellow;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* footer */
+.footer-logo{
+  width:215px;
+  height:49px;
+}
+.footer-container {
+  padding:5% 0 1% 0;
+  background-color: black;
+}
+.footer-payment h3{
+   text-align:center;
+   color:#1e7f68;
+   font-size: 40px;
+   font-weight: bold;
+}
+.curacaoImg{
+  width:327px;
+  height:106px;
+}
+.payment-gateway-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:50px;
+    justify-content: center; 
+    padding:0px 20px;
+}  
+.footer-payment--img{
+    width:132px;
+    height:132px
+}
+.grid-four-column {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 100px;
+  color: white;
+  padding:4% 3%;
+}
+.grid-five--column{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap:5px;
+  padding-top: 25px;
+}
+.icons{
+  background-color: #363636;
+  color:white;
+  border-radius:5px;
+  font-size: var(--icon-size,25px);
+  line-height: var(--icon-size,25px);
+  width: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
+  height: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
+  padding:10px;
+}
+.icons:hover{
+  background-color: white;
+  color:#191970;
+}
+/* .icons{
+  width:1rem;
+  height:1rem;
+} */
+.footer-explore--link {
+  display: block;
+  text-decoration:none;
+  color:white;
+}
+.grid-container > div {
+  background-color: rgba(7, 7, 7, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: black;
+}
+.footer-bottom--section{
+  color:white;
+  text-align: center;
 }
