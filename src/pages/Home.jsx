@@ -1,12 +1,13 @@
-import React from "react";
+import Container from 'react-bootstrap/Container';
 import viratImg from "../assets/images/virat.png";
 import lotusImg2 from "../assets/images/lotusImg2.png";
 import welcomeBonus from "../assets/images/welcomeBonus.png";
-import WeeklyRaffle from "../assets/images/WeeklyRaffle.png";
+import WeeklyRanpmffle from "../assets/images/WeeklyRaffle.png";
 import rebateBonus from "../assets/images/rebateBonus.png";
 import InvitationBonus from "../assets/images/InvitationBonus.png";
 import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
+
 
 const Home = () => {
   const data = [
@@ -41,6 +42,8 @@ const Home = () => {
   ];
   return (
     <div className="full-container">
+      <div className='hero__section'>
+      <Container>
       <div className="grid-two-column grid-item">
         <div className="grid-item__title">
           <h2>
@@ -56,7 +59,16 @@ const Home = () => {
         <div className="grid-item__img">
           <img src={viratImg} />
         </div>
-        <div className="grid-item__img2">
+       
+      </div>
+      </Container>
+      </div>
+
+      {/* all knw section */}
+      <div className='home_know'>
+        <div className="container">
+          <div className="grid-two-column grid-item">
+          <div className="grid-item__img2">
           <img src={lotusImg2} />
         </div>
         <div className="grid-item__title2">
@@ -81,8 +93,10 @@ const Home = () => {
             <Button className="grid-btn">Learn more about us</Button>
           </NavLink>
         </div>
+          </div>
+        </div>
       </div>
-
+     
       {/* trusted features------------------- */}
       <div className="grid__feature">
         <h3>Trusted Features and Services of Lotus 365</h3>
@@ -174,6 +188,38 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      {/* ovelray card container */}
+
+      <div className='overlaycard__container'>
+         <div className="container">
+         <div className="row">
+            <div className="col-md-6">
+              {/* ovalray badgae sport type */}
+              <div className="sport_typsBadges">
+                  <span>CRICKET</span>
+              </div>
+            <div className="overlayCard__inner">
+              <div className="overlaycard_front bgfront1">
+                 <div className="overlay__content">
+                     <p>
+                            
+                      Our website offers you different cricket betting options where you can bet, like Test, ODI, T20, IPL, and more. You can place bets on your favored players, teams, and matches with real time, ease and convenience. Want the inside scoop on sports betting? Don't miss out! Check our sports betting page now!							
+                     </p>
+                 </div>
+              </div>
+              <div className="overlaycard_back bgback1">
+   
+              </div>
+            </div>    
+            </div>
+            <div className="col-md-6">
+
+            </div>
+          </div>
+         </div>
+      </div>
+
     </div>
   );
 };

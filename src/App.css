@@ -1,3 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.container{
+  max-width: 1280px;
+}
+
 /* NavBr */
 .site-logo {
   width: 129px;
@@ -101,9 +122,11 @@ img {
   align-items: center;
   row-gap: 20px;
   padding: 0px 0px 0px 10px;
+  position: relative;
+  z-index: 10;
 }
 .grid-item__img {
-  background-image: linear-gradient(to right, #fdfdfd, #c9dad0);
+  /* background-image: linear-gradient(to right, #fdfdfd, #c9dad0); */
 }
 .grid-item__title h2 {
   color: #1e7f68;
@@ -178,4 +201,91 @@ tr:nth-child(even) {
   color: black;
   font-size: 16px;
   line-height: 24px;
+}
+.hero__section{
+   position: relative;
+}
+.hero__section::after{
+  content: "";
+  background-image: url(../src/assets/images/hero.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: left;
+  background-size: cover;
+}
+.home_know{
+  padding: 60px 0px 0px 0px;
+}
+.home_know p{
+  font-size: 17px;
+  
+}
+.home_know h3{
+  font-weight: 600;
+}
+.bgfront1{
+  background-image: url(../src/assets/images/overlyfron1.png);
+}
+.bgback1{
+  background-image: url(../src/assets/images/overlayback1.png);
+}
+.overlaycard__container{
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.overlayCard__inner{
+  position: relative;
+  height: 280px;
+  border-left: 2px solid #635dff;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+}
+.overlaycard_front,.overlaycard_back{
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+.overlay__content{
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay__content p{
+  font-size: 18px;
+  line-height: 29px;
+}
+.overlaycard_back{
+  opacity: 0;
+}
+.overlayCard__inner:hover .overlaycard_front {
+  opacity: 0;
+}
+.overlayCard__inner:hover .overlaycard_back {
+  opacity: 1;
+}
+.sport_typsBadges{
+  padding: 15px 50px 12px 50px;
+  background-color: #1E7F68;
+  border-radius: 0px 30px 0px 0px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  width: max-content;
+}
+.sport_typsBadges span{
+  font-family: 'Gabarito', sans-serif;
+    color: #fff;
+    font-size: 16px;
 }
