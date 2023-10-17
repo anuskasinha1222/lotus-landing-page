@@ -15,7 +15,7 @@ function NavBar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-        <Nav.Link href="#home" className='menu'>Home</Nav.Link>
+        <Nav.Link href="/" className='menu'>Home</Nav.Link>
           <Nav.Link href="/site-app" className='menu'>Site App</Nav.Link>
           <Nav.Link href="/site-login" className='menu'>Site Login</Nav.Link>
           <Nav.Link href="/payment-methods" className='menu'>Payment Methods</Nav.Link>

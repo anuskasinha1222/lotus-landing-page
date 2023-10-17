@@ -1,7 +1,7 @@
 /* NavBr */
 .site-logo {
- width:129px;
- height:29px;
+  width: 129px;
+  height: 29px;
 }
 .Navbar-menu {
   background-color: #1e7f68;
@@ -18,70 +18,67 @@
 }
 
 /* footer */
-.footer-logo{
-  width:215px;
-  height:49px;
+.footer-logo {
+  width: 215px;
+  height: 49px;
 }
 .footer-container {
-  padding:5% 0 1% 0;
+  padding: 5% 0 1% 0;
   background-color: black;
 }
-.footer-payment h3{
-   text-align:center;
-   color:#1e7f68;
-   font-size: 40px;
-   font-weight: bold;
+.footer-payment h3 {
+  text-align: center;
+  color: #1e7f68;
+  font-size: 40px;
+  font-weight: bold;
 }
-.curacaoImg{
-  width:327px;
-  height:106px;
+.curacaoImg {
+  width: 327px;
+  height: 106px;
 }
 .payment-gateway-section {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap:50px;
-    justify-content: center; 
-    padding:0px 20px;
-}  
-.footer-payment--img{
-    width:132px;
-    height:132px
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+  justify-content: center;
+  padding: 0px 20px;
+}
+.footer-payment--img {
+  width: 132px;
+  height: 132px;
 }
 .grid-four-column {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 100px;
   color: white;
-  padding:4% 3%;
+  padding: 4% 3%;
 }
-.grid-five--column{
+.grid-five--column {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  gap:5px;
+  gap: 5px;
   padding-top: 25px;
 }
-.icons{
+.icons {
   background-color: #363636;
-  color:white;
-  border-radius:5px;
-  font-size: var(--icon-size,25px);
-  line-height: var(--icon-size,25px);
-  width: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
-  height: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
-  padding:10px;
+  color: white;
+  border-radius: 5px;
+  font-size: var(--icon-size, 25px);
+  line-height: var(--icon-size, 25px);
+  width: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, 0.5em)));
+  height: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, 0.5em)));
+  padding: 10px;
 }
-.icons:hover{
+.icons:hover {
   background-color: white;
-  color:#191970;
+  color: #191970;
 }
-/* .icons{
-  width:1rem;
-  height:1rem;
-} */
+
 .footer-explore--link {
   display: block;
-  text-decoration:none;
-  color:white;
+  text-decoration: none;
+  color: white;
 }
 .grid-container > div {
   background-color: rgba(7, 7, 7, 0.8);
@@ -90,7 +87,95 @@
   font-size: 30px;
   color: black;
 }
-.footer-bottom--section{
-  color:white;
+.footer-bottom--section {
+  color: white;
   text-align: center;
+}
+/* home page CSS-------------------------------------------------------------- */
+img {
+  width: 100%;
+}
+.grid-two-column {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  row-gap: 20px;
+  padding: 0px 0px 0px 10px;
+}
+.grid-item__img {
+  background-image: linear-gradient(to right, #fdfdfd, #c9dad0);
+}
+.grid-item__title h2 {
+  color: #1e7f68;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #575757;
+  font-size: 60px;
+}
+.grid-item__title h2 span {
+  color: rgb(250, 221, 22);
+}
+.grid-btn {
+  background-color: #1e7f68;
+  border-radius: 20px;
+  padding: 8px 25px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 48px;
+  color: #1e7f68;
+}
+.grid-item__title2 h3 {
+  padding: 0px 0px 20px 0px;
+}
+.grid-item__title2 h3 p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+}
+.grid__feature {
+  padding: 8% 4%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+td {
+  border: 1px solid #070707;
+  padding: 15px;
+  color: #1e7f68;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.feature__item {
+  width: 15%;
+}
+.last--line__italic {
+  padding-top: 20px;
+  text-align: center;
+}
+/* bonus card */
+.bonus-grid{
+  padding:0px 30px 0px 30px;
+}
+.card {
+  text-align: center;
+  border:none;
+}
+.card-title {
+  font-size: 25px;
+  color: #1e7f68;
+}
+.card-text {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
 }
